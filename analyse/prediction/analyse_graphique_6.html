@@ -1,0 +1,86 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique montre les prédictions de l'excès de poids dans différents quartiers, en utilisant un modèle de
+    régression linéaire. L'objectif est de prévoir les tendances futures de l'excès de poids et de comparer ces
+    prédictions avec les données réelles pour évaluer la précision du modèle.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du fichier <strong>"His indicators update Nov 2024 FINAL.xlsx"</strong>. Elles incluent les
+    valeurs d'excès de poids des enfants de 10 à 11 ans pour chaque quartier. Les données sont regroupées par périodes
+    annuelles, allant de 2006 à 2023.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites du fichier Excel contenant des informations sur l'excès de poids.</li>
+    <li>La colonne de la période a été convertie en format numérique pour faciliter l'analyse temporelle.</li>
+    <li>Les données ont été filtrées pour la ville ou le quartier sélectionné.</li>
+    <li>Les valeurs manquantes ont été supprimées pour éviter de fausser l'analyse.</li>
+    <li>Une régression linéaire a été appliquée pour estimer l'évolution de l'excès de poids.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Modèle de régression linéaire :</strong> Ce modèle a été utilisé pour prévoir les tendances futures en
+        fonction de l'évolution historique de l'excès de poids.</li>
+    <li><strong>Variables indépendantes :</strong> Année (période numérique).</li>
+    <li><strong>Variable dépendante :</strong> Taux d'excès de poids.</li>
+    <li>Le modèle a été ajusté aux données historiques pour prédire les valeurs futures pour les années 2022/23 et
+        2023/24.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Régression linéaire :</strong> Ce modèle a été choisi pour sa simplicité et son efficacité à modéliser
+        des tendances temporelles. Bien que d'autres modèles plus complexes puissent être explorés, la régression
+        linéaire offre une première approche fiable pour estimer les tendances futures.</li>
+    <li>La prédiction des années futures (2022/23 et 2023/24) permet de vérifier si la tendance générale est croissante,
+        stable ou en déclin.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Prédictions et comparaison avec les données réelles :</strong> Les prédictions générées par le modèle de
+        régression linéaire sont loin des données réelles dans la plupart des cas. Le modèle semble ne pas capter les
+        variations réelles des données d'excès de poids, ce qui suggère que la régression linéaire n'est pas bien
+        adaptée pour ce type de données. En comparant les prédictions avec les données réelles disponibles, on constate
+        une grande disparité entre les deux. La régression linéaire prédit des valeurs qui sont souvent trop éloignées
+        des tendances réelles observées.</li>
+    <li><strong>Limites du modèle :</strong> La régression linéaire suppose une relation linéaire constante entre les
+        années et les taux d'excès de poids. Cependant, dans ce cas, les données montrent probablement des variations
+        plus complexes et non linéaires (par exemple, des changements soudains dus à des politiques publiques ou des
+        facteurs sociaux). Cela peut expliquer pourquoi le modèle ne réussit pas à prédire correctement les valeurs
+        futures.</li>
+    <li><strong>Suggestions :</strong> Il pourrait être judicieux d'explorer d'autres modèles plus complexes, comme les
+        forêts aléatoires, les réseaux de neurones, ou des modèles basés sur des séries temporelles (ARIMA, LSTM, etc.)
+        qui peuvent mieux capturer les tendances et les variations complexes des données.</li>
+</ul>
+
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Performance du modèle :</strong> La performance du modèle de régression linéaire est insatisfaisante.
+        Les prédictions sont largement éloignées des données réelles dans de nombreux cas, ce qui indique que ce modèle
+        est peu adapté pour prédire les tendances de l'excès de poids. Des modèles plus complexes, tels que les forêts
+        aléatoires ou les modèles basés sur les séries temporelles, seraient probablement plus performants pour capturer
+        les variations des données.</li>
+    <li><strong>Limites des données :</strong> Les prédictions sont basées sur des données historiques, et la régression
+        linéaire pourrait ne pas être suffisamment flexible pour prendre en compte les variations complexes dans les
+        données réelles. Des facteurs externes (politiques, sociales, économiques) peuvent entraîner des changements
+        rapides et non linéaires dans les données d'excès de poids.</li>
+    <li><strong>Utilisation des prédictions :</strong> En raison des limites de la régression linéaire, les prédictions
+        obtenues avec ce modèle ne sont pas fiables pour une planification future précise. Il serait préférable
+        d'explorer d'autres approches pour mieux comprendre les tendances et faire des prévisions plus solides sur
+        l'évolution de l'excès de poids dans la région.</li>
+</ul>
+
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Bien que ce graphique permette de visualiser les prédictions basées sur la régression linéaire, il montre également
+    que les prédictions ne sont pas fidèles aux tendances réelles des données d'excès de poids. Les utilisateurs peuvent
+    observer que les valeurs prédites sont souvent trop éloignées des données réelles, ce qui souligne les limites de ce
+    modèle pour capturer les dynamiques complexes des données.
+</p>

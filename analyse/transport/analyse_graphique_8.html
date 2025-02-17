@@ -1,0 +1,56 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique permet de comparer les taux de criminalité entre différents modes de transport à Londres. L'objectif est de comprendre s'il existe des relations linéaires entre les taux de criminalité de différents modes de transport public, tels que les bus, le London Underground / Docklands Light Railway (LU/DLR), le London Overground et le London Tramlink. Cela peut aider à déterminer si certains modes de transport présentent des tendances similaires en termes de sécurité, en tenant compte de la quantité de passagers.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. 
+    <ul>
+        <li>Le BTP est responsable de la sécurité sur les réseaux LU, DLR, London Tramlink et London Overground.</li>
+        <li>Le MPS est en charge de la sécurité du réseau de bus à Londres.</li>
+    </ul>
+    Les données incluent le nombre de crimes et le taux de criminalité par million de trajets passagers pour chaque type de transport public. Elles sont mises à jour trimestriellement et affichées par mois.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données de criminalité ont été extraites pour les modes de transport public (bus, LU/DLR, Overground, Tramlink) pour chaque mois.</li>
+    <li>Les taux de criminalité ont été calculés en fonction du nombre de crimes par million de passagers.</li>
+    <li>Les données ont été nettoyées et mises en forme pour permettre une comparaison facile entre les différents modes de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les relations linéaires croissantes entre les taux de criminalité des différents modes de transport sont examinées à l'aide de graphiques en nuage de points, avec une ligne de régression pour observer la tendance.</li>
+    <li>La ligne de régression permet de visualiser la relation entre les taux de criminalité de chaque pair de modes de transport choisis.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en nuage de points permet d'illustrer clairement les relations entre les taux de criminalité de différents modes de transport.</li>
+    <li>La tendance linéaire ajoutée à chaque graphique aide à déterminer s'il existe une corrélation croissante entre les différents modes de transport en termes de sécurité.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une relation linéaire croissante a été observée pour tous les modes de transport comparés. Cela signifie que, indépendamment du mode de transport, une augmentation du taux de criminalité semble liée à une augmentation du nombre de passagers.</li>
+    <li>Les modes de transport tels que les bus et le LU/DLR montrent des relations similaires avec des taux de criminalité augmentant avec le nombre de passagers, ce qui suggère des tendances communes dans les problèmes de sécurité en fonction du volume de trafic.</li>
+    <li>Il est important de noter que ces observations sont basées sur les données disponibles, et une analyse plus détaillée pourrait permettre d'explorer des facteurs supplémentaires influençant ces relations.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Dropdown: Choisir les modes de transport</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le graphique utilise un <strong>Dropdown</strong> pour permettre à l'utilisateur de choisir deux modes de transport à comparer. Vous pouvez sélectionner différents modes de transport (par exemple, Bus, London Underground / Docklands Light Railway, London Overground, et London Tramlink) pour voir comment les taux de criminalité varient entre eux.
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Premier mode de transport :</strong> Sélectionnez le premier mode de transport à comparer, tel que les bus ou le London Underground / Docklands Light Railway.</li>
+    <li><strong>Deuxième mode de transport :</strong> Sélectionnez un autre mode de transport pour effectuer la comparaison et observer la relation entre leurs taux de criminalité.</li>
+    <li>Après avoir effectué vos sélections, vous pouvez visualiser les résultats sous forme de nuage de points avec une ligne de régression pour mieux comprendre les corrélations.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Taux de criminalité par million de passagers :</strong> Les taux de criminalité sont calculés en fonction du nombre de crimes par million de passagers pour chaque mode de transport.</li>
+    <li><strong>Corrélation linéaire :</strong> La tendance observée entre les différents modes de transport suggère que le volume de passagers pourrait être un facteur influent sur le taux de criminalité.</li>
+</ul>

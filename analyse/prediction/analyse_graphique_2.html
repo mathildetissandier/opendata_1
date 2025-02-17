@@ -1,0 +1,50 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique montre les prédictions de la température moyenne des lignes de métro à Londres, en utilisant un modèle XGBoost. L'objectif est de prévoir les tendances futures des températures dans les tunnels et sur les quais, d'identifier les lignes les plus chaudes, et d'évaluer l'efficacité des initiatives de refroidissement mises en place par Transport for London (TfL).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de Transport for London (TfL) et sont disponibles sur <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles incluent les températures moyennes mensuelles enregistrées pendant les heures de pointe du soir sur les lignes de métro profondes (Deep Tube) depuis 2013.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier CSV contenant les températures moyennes mensuelles par ligne de métro.</li>
+    <li>Une colonne "Date" a été créée en combinant les colonnes "Year" et "Month" pour permettre une analyse temporelle précise.</li>
+    <li>Les données ont été transformées en format long (long format) pour faciliter la visualisation par ligne de métro.</li>
+    <li>Un encodage cyclique du mois a été utilisé pour capturer la saisonnalité des températures.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Modèle XGBoost :</strong> Un modèle XGBoost (Extreme Gradient Boosting) a été utilisé pour prédire les températures futures. Ce modèle est bien adapté pour capturer les relations non linéaires et les interactions complexes entre les variables.</li>
+    <li><strong>Encodage cyclique :</strong> Les mois ont été encodés de manière cyclique (sinus et cosinus) pour capturer les variations saisonnières des températures.</li>
+    <li><strong>Standardisation :</strong> Les caractéristiques (features) ont été standardisées pour améliorer la performance du modèle.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le modèle XGBoost est choisi pour sa capacité à gérer des données complexes et à fournir des prédictions précises.</li>
+    <li>L'encodage cyclique permet de capturer les variations saisonnières de manière efficace.</li>
+    <li>La standardisation des caractéristiques améliore la convergence du modèle et la qualité des prédictions.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les lignes profondes (comme la Central Line et la Bakerloo Line) montrent des températures plus élevées, en raison de la chaleur accumulée dans les tunnels.</li>
+    <li>Une tendance régulière et cohérente comparée aux températures réelles est prédite pour les mois à venir.</li>
+    <li>Les initiatives de refroidissement, comme l'installation de systèmes de ventilation améliorés et l'utilisation de matériaux réfléchissants, pourraient atténuer cette tendance.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Performance du modèle :</strong> Le modèle XGBoost montre une bonne précision sur les données historiques, avec une erreur moyenne faible.</li>
+    <li><strong>Limites des données :</strong> Les prédictions sont basées sur des données historiques et peuvent être affectées par des événements imprévus (comme des changements politiques ou des conditions météorologiques extrêmes).</li>
+    <li><strong>Utilisation des prédictions :</strong> Ces prédictions peuvent être utilisées pour planifier les initiatives de refroidissement, anticiper les pics de température et évaluer l'impact des politiques de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif vous permet d'observer les prédictions de la température moyenne des lignes de métro pour les mois à venir. Survolez les lignes pour voir les valeurs exactes des prédictions. 
+</p>

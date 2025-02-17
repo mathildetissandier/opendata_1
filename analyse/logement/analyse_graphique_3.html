@@ -1,0 +1,84 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le premier graphique analyse l’évolution du ratio Prix/Revenus (abordabilité) dans les différents quartiers de
+    Londres depuis 1997.
+    La carte permet d’identifier visuellement les quartiers les plus ou moins abordables.
+    Le ratio Prix/Revenus mesure l’accessibilité d’un quartier en comparant le prix moyen des maisons avec le revenu
+    moyen des habitants.
+    Un ratio élevé indique que l’immobilier est moins accessible par rapport aux revenus, tandis qu’un ratio faible
+    suggère une plus grande abordabilité.
+    L’objectif est d’étudier l’évolution de ce ratio sur le long terme et de repérer d’éventuelles variations en
+    fonction de facteurs économiques, politiques ou sociaux.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk"
+        target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles comprennent des
+    informations annuelles sur l'abordabilité de chaque quartier.
+</p>
+<p>Un fichier GeoJSON des arrondissements de Londres a été utilisé pour créer des polygones géographiques.</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir de fichiers Excel annuels.</li>
+    <li>Les colonnes pertinentes ont été sélectionnées, notamment le ratio Prix/Revenus.</li>
+    <li>Les zones non pertinentes ont été filtrés pour se concentrer sur les
+        données spécifiques à chaque quartier.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution du ratio par quartier.</li>
+    <li>Une visualisation par carte a également été choisie pour mettre en évidence les différences d’évolution du ratio
+        entre les quartiers au niveau géographique.</li>
+    <li>L'utilisation de données annuelles permet une analyse précise des évolutions sur une période de plus de deux
+        décennies.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Tendances générales :</strong> Sur l'ensemble des quartiers, on observe une augmentation générale du
+        ratio prix/revenus entre 1997 et 2023, indiquant une baisse de l'accessibilité du marché immobilier. Cette
+        tendance reflète probablement la hausse des prix de l'immobilier plus rapide que celle des revenus des
+        habitants.</li>
+    <li><strong>Variations par quartier :</strong> Certains quartiers, comme Westminster et Kensington & Chelsea,
+        montrent des ratios particulièrement élevés, ce qui suggère que ces zones sont moins abordables en raison de
+        leur statut de quartiers prestigieux et économiquement dynamiques. À l'inverse, des quartiers comme Barking et
+        Dagenham présentent des ratios plus faibles, indiquant une plus grande accessibilité.</li>
+    <li><strong>Impact des événements économiques :</strong> Des baisses temporaires ou des ralentissements dans
+        l'augmentation du ratio peuvent être observés autour des périodes de crises économiques, comme la crise
+        financière de 2008, où les prix de l'immobilier ont pu stagner ou baisser temporairement.</li>
+    <li><strong>Carte de l'accessibilité :</strong> La carte permet de visualiser clairement les disparités
+        géographiques en termes d'accessibilité. Les quartiers centraux et ouest de Londres sont généralement moins
+        abordables, tandis que les quartiers périphériques et est de Londres montrent des ratios plus faibles, reflétant
+        une plus grande accessibilité.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du menu déroulant (Dropdown)</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le menu déroulant ci-dessus vous permet de sélectionner un quartier spécifique de Londres pour afficher les données
+    correspondantes. Voici comment l'utiliser :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Sélectionnez un quartier :</strong> Cliquez sur le menu déroulant et choisissez un quartier dans la
+        liste. Les données du graphique seront automatiquement mises à jour pour refléter les tendances du quartier
+        sélectionné.</li>
+    <li><strong>Comparaison entre quartiers :</strong> Vous pouvez changer de quartier à tout moment pour comparer les
+        tendances entre différentes zones de Londres.</li>
+    <li><strong>Focus sur des zones spécifiques :</strong> Cet outil vous permet de zoomer sur des quartiers
+        particuliers pour une analyse plus détaillée.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du Slider</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le Slider vous permet de sélectionner une année spécifique entre 1997 et 2023 pour afficher les données
+    correspondantes. Voici comment l'utiliser :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Sélectionnez une année :</strong> Faites glisser le bouton sur le curseur pour sélectionner la date
+        souhaitée. Les données du graphique seront automatiquement mises à jour pour refléter les tendances du quartier
+        sélectionné.</li>
+    <li><strong>Comparaison entre années :</strong> Vous pouvez changer d'année à tout moment pour comparer les
+        tendances entre différentes zones de Londres.</li>
+</ul>

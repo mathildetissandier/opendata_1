@@ -1,0 +1,55 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique analyse l'évolution de la température moyenne des lignes de métro à Londres, enregistrées depuis 2013. L'objectif est de comprendre les variations de température dans les tunnels et sur les quais, d'identifier les lignes les plus chaudes, et d'évaluer l'efficacité des initiatives de refroidissement mises en place par Transport for London (TfL).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de Transport for London (TfL) et sont disponibles sur <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles incluent les températures moyennes mensuelles enregistrées pendant les heures de pointe du soir sur les lignes de métro profondes (Deep Tube) depuis 2013.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier CSV contenant les températures moyennes mensuelles par ligne de métro.</li>
+    <li>Une colonne "Date" a été créée en combinant les colonnes "Year" et "Month" pour permettre une analyse temporelle précise.</li>
+    <li>Les données ont été transformées en format long (long format) pour faciliter la visualisation par ligne de métro.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par mois et par ligne de métro pour observer les tendances temporelles.</li>
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution des températures au fil du temps, avec une couleur différente pour chaque ligne de métro.</li>
+    <li>Des marqueurs ont été ajoutés pour mettre en évidence les points de données mensuels.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en courbes permet de mettre en évidence les variations mensuelles et les tendances à long terme.</li>
+    <li>Le regroupement par ligne de métro permet de comparer les températures entre les différentes lignes.</li>
+    <li>L'utilisation de marqueurs facilite la lecture des données mensuelles spécifiques.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les températures les plus élevées sont généralement observées sur les lignes profondes (comme la Central Line et la Bakerloo Line), en raison de la chaleur accumulée dans les tunnels.</li>
+    <li>Une tendance à la hausse des températures est visible au fil des années, probablement due à l'augmentation du nombre de passagers et à la chaleur générée par les trains.</li>
+    <li>Certaines lignes, comme la Waterloo and City Line, montrent une stabilisation ou une légère baisse des températures, probablement grâce aux initiatives de refroidissement mises en place (ventilation améliorée, freinage régénératif, etc.).</li>
+    <li>Les températures varient également en fonction des saisons, avec des pics pendant les mois d'été.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Initiatives de refroidissement</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Transport for London (TfL) a mis en place plusieurs initiatives pour réduire les températures dans le métro et améliorer le confort des passagers :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Ventilation améliorée :</strong> Doubler la capacité des puits de ventilation sur la Victoria Line et installer de nouveaux ventilateurs dans plusieurs stations.</li>
+    <li><strong>Refroidissement actif :</strong> Utilisation d'eau souterraine pour refroidir les quais, comme à la station Victoria et à Green Park.</li>
+    <li><strong>Matériaux réfléchissants :</strong> Installation de matériaux réfléchissants sur les toits des trains de la Central Line pour réduire les gains de chaleur solaire.</li>
+    <li><strong>Trains climatisés :</strong> Introduction de 192 nouveaux trains climatisés sur les lignes Circle, District, Hammersmith & City, et Metropolitan.</li>
+    <li><strong>Freinage régénératif :</strong> Utilisation de freins régénératifs sur les nouveaux trains pour réduire la chaleur générée.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif vous permet d'observer l'évolution des températures moyennes par ligne de métro. Survolez les points pour voir la température exacte pour chaque mois. 
+</p>

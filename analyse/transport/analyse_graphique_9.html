@@ -1,0 +1,55 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive montre les ponts, tunnels et barrières routières à Londres qui ont des restrictions de hauteur. L'objectif est de fournir une visualisation claire des structures qui limitent la circulation des véhicules de grande taille, d'identifier les zones à risque pour les transporteurs, et de comprendre la répartition géographique de ces restrictions.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>.
+    Plus précisement d'un fichier CSV contenant 877 structures (ponts, tunnels et barrières) situées dans les limites du Grand Londres et à l'intérieur de la M25. Ces données sont mises à jour annuellement et incluent des informations sur les restrictions de hauteur, les coordonnées géographiques et les boroughs concernés.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier CSV contenant les informations sur les structures (ponts, tunnels, barrières).</li>
+    <li>Les colonnes de latitude et de longitude ont été nettoyées pour convertir les coordonnées en nombres décimaux (remplacement des virgules par des points).</li>
+    <li>Les données ont été agrégées par borough pour compter le nombre de structures par zone.</li>
+    <li>Un fichier GeoJSON des boroughs de Londres a été utilisé pour créer des polygones géographiques.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été visualisées sur une carte interactive utilisant la bibliothèque Folium.</li>
+    <li>Deux types de cartes sont disponibles :
+        <ul>
+            <li><strong>Carte avec Polygones :</strong> Affiche les boroughs de Londres avec des polygones colorés en fonction du nombre de structures (ponts, tunnels, barrières).</li>
+            <li><strong>Carte avec Marqueurs :</strong> Affiche des marqueurs individuels pour chaque structure, avec des informations détaillées au survol.</li>
+        </ul>
+    </li>
+    <li>Un menu déroulant permet de sélectionner un borough spécifique pour afficher une carte détaillée de la zone.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation sur une carte interactive permet de localiser facilement les structures et de comprendre leur répartition géographique.</li>
+    <li>Les polygones colorés par borough facilitent l'identification des zones à forte concentration de restrictions de hauteur.</li>
+    <li>Les marqueurs individuels fournissent des informations détaillées sur chaque structure, utiles pour les transporteurs et les planificateurs de routes.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les boroughs centraux (comme Tower Hamlets) ont une concentration élevée de ponts et de tunnels avec des restrictions de hauteur, en raison de la densité urbaine et des infrastructures historiques.</li>
+    <li>Les boroughs périphériques (comme Harrow et Havering) ont moins de structures avec des restrictions de hauteur, mais celles-ci peuvent avoir un impact significatif sur les routes principales.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Impact sur le transport :</strong> Les restrictions de hauteur peuvent poser des défis pour les transporteurs de marchandises, en particulier pour les véhicules de grande taille comme les camions et les bus.</li>
+    <li><strong>Mises à jour annuelles :</strong> Les données sont mises à jour chaque année pour refléter les changements dans les infrastructures et les nouvelles restrictions.</li>
+    <li><strong>Utilisation des données :</strong> Ces informations sont utiles pour les planificateurs de routes, les transporteurs et les autorités locales afin d'améliorer la sécurité et la fluidité du trafic.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive vous permet d'explorer les ponts, tunnels et barrières routières avec des restrictions de hauteur à Londres. Utilisez le menu déroulant pour sélectionner un type de carte (Polygones ou Marqueurs) et, si nécessaire, choisissez un borough spécifique pour afficher une carte détaillée. Survolez les polygones ou les marqueurs pour obtenir des informations supplémentaires.
+</p>

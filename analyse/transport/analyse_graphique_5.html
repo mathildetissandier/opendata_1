@@ -1,0 +1,68 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique analyse l'évolution du nombre de trajets sur le réseau de transport public à Londres, ventilés par type de transport (bus, métro, DLR, tram, Overground, etc.). L'objectif est de comprendre les tendances d'utilisation des différents modes de transport, d'identifier les impacts d'événements majeurs (comme la pandémie de COVID-19), et d'évaluer la reprise progressive des trajets après la crise.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de Transport for London (TfL) et sont disponibles sur <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles incluent le nombre de trajets par période de reporting, ventilés par type de transport (bus, métro, DLR, tram, Overground, et téléphérique).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier Excel contenant les trajets par type de transport.</li>
+    <li>Les colonnes ont été nettoyées pour supprimer les valeurs manquantes et standardiser les formats.</li>
+    <li>Une colonne "All operator journeys (m)" a été créée pour regrouper les trajets des opérateurs secondaires (DLR, tram, Overground, téléphérique, et TfL Rail).</li>
+    <li>Les données ont été transformées en format long (long format) pour faciliter la visualisation par type de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par période de reporting et par type de transport pour observer les tendances temporelles.</li>
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution des trajets au fil du temps, avec une couleur différente pour chaque type de transport.</li>
+    <li>Des marqueurs ont été ajoutés pour mettre en évidence les points de données mensuels.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en courbes permet de mettre en évidence les variations mensuelles et les tendances à long terme.</li>
+    <li>Le regroupement par type de transport permet de comparer l'utilisation des différents modes de transport.</li>
+    <li>L'utilisation de marqueurs facilite la lecture des données mensuelles spécifiques.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une baisse spectaculaire des trajets est observée à partir de mars 2020, en raison de la pandémie de COVID-19 et des mesures de confinement. Par exemple :
+        <ul>
+            <li>En <strong>février 2020</strong>, les trajets étaient de :
+                <ul>
+                    <li><strong>165 millions</strong> pour les bus,</li>
+                    <li><strong>106 millions</strong> pour le métro,</li>
+                    <li><strong>32 millions</strong> pour les autres transports (DLR, tram, Overground, etc.).</li>
+                </ul>
+            </li>
+            <li>En <strong>avril 2020</strong>, les trajets ont chuté à :
+                <ul>
+                    <li><strong>30 millions</strong> pour les bus,</li>
+                    <li><strong>5 millions</strong> pour le métro,</li>
+                    <li><strong>3 millions</strong> pour les autres transports.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Une reprise progressive des trajets est visible à partir de l'été 2020, mais les niveaux pré-pandémiques ne sont pas encore atteints pour certains modes de transport.</li>
+    <li>Les bus montrent une reprise plus rapide que le métro, probablement en raison de la perception d'un risque moindre de transmission du virus en surface.</li>
+    <li>Les autres transports (DLR, tram, Overground, etc.) montrent une reprise plus lente, reflétant peut-être une dépendance accrue au télétravail dans les zones desservies par ces modes de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Impact de la pandémie de COVID-19 :</strong> La pandémie a entraîné une réduction drastique des trajets sur le réseau de transport public, en raison des mesures de confinement, du télétravail et des restrictions de déplacement.</li>
+    <li><strong>Reconstruction progressive :</strong> Depuis 2021, une reprise progressive est observée, mais les niveaux de trajets restent inférieurs à ceux d'avant la pandémie pour certains modes de transport.</li>
+    <li><strong>Sources des données :</strong> Les trajets sur le DLR sont basés sur des comptages automatiques de passagers dans les stations, tandis que les trajets sur l'Overground et le tram sont basés sur des comptages automatiques à bord des véhicules.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif vous permet d'observer l'évolution des trajets par type de transport. Survolez les points pour voir le nombre exact de trajets pour chaque mois. 
+</p>

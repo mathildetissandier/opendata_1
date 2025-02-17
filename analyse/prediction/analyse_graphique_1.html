@@ -1,0 +1,52 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique montre les prédictions des locations de vélos du programme Santander Cycle Hire à Londres, en utilisant un modèle combiné ARIMA + XGBoost. L'objectif est de prévoir les tendances futures des locations de vélos, d'évaluer la performance du modèle et de comprendre les variations saisonnières et les impacts des événements majeurs (comme la pandémie de COVID-19).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles incluent le nombre total de locations de vélos par jour, mois et année, depuis le lancement du programme le 30 juillet 2010.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier CSV contenant les locations de vélos par jour.</li>
+    <li>La colonne de date a été convertie en format datetime pour permettre une analyse temporelle précise.</li>
+    <li>La colonne du nombre de locations a été nettoyée pour supprimer les espaces insécables et autres caractères indésirables, puis convertie en nombres entiers.</li>
+    <li>Les données ont été agrégées par mois pour observer les tendances mensuelles.</li>
+    <li>Les données ont été divisées en un ensemble d'entraînement (avant 2023) et un ensemble de test (après 2023).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Modèle ARIMA :</strong> Un modèle ARIMA (AutoRegressive Integrated Moving Average) a été utilisé pour capturer les tendances temporelles et les composantes saisonnières des données. Les paramètres (p, d, q) ont été sélectionnés automatiquement.</li>
+    <li><strong>Modèle XGBoost :</strong> Un modèle XGBoost (Extreme Gradient Boosting) a été utilisé pour corriger les erreurs du modèle ARIMA et améliorer la précision des prédictions. Il a été entraîné sur les résidus du modèle ARIMA.</li>
+    <li><strong>Combinaison des modèles :</strong> Les prédictions finales sont une combinaison des prédictions ARIMA et des ajustements apportés par XGBoost.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le modèle ARIMA est bien adapté pour les séries temporelles avec des tendances et des saisonnalités.</li>
+    <li>XGBoost est utilisé pour capturer les relations non linéaires et améliorer la précision des prédictions.</li>
+    <li>La combinaison des deux modèles permet de tirer parti des forces de chaque approche.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le modèle ARIMA capture bien les tendances générales et les variations saisonnières, mais il peut sous-estimer ou surestimer certaines valeurs.</li>
+    <li>XGBoost améliore les prédictions en ajustant les erreurs du modèle ARIMA, en particulier pour les variations plus complexes.</li>
+    <li>Les prédictions combinées (ARIMA + XGBoost) montrent une bonne adéquation avec les données réelles, en particulier pour les mois récents.</li>
+    <li>Une augmentation progressive des locations de vélos est prédite pour les mois à venir, reflétant une reprise post-pandémique et une popularité croissante du vélo comme mode de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Performance du modèle :</strong> Le modèle combiné ARIMA + XGBoost montre une bonne précision sur les données de test, avec une erreur moyenne faible.</li>
+    <li><strong>Limites des données :</strong> Les prédictions sont basées sur des données historiques et peuvent être affectées par des événements imprévus (comme des changements politiques ou des conditions météorologiques extrêmes).</li>
+    <li><strong>Utilisation des prédictions :</strong> Ces prédictions peuvent être utilisées pour planifier les ressources, anticiper les pics de demande et évaluer l'impact des politiques de transport.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif vous permet d'observer les prédictions des locations de vélos pour les mois à venir. Survolez les lignes pour voir les valeurs exactes des prédictions et des données réelles. 
+</p>

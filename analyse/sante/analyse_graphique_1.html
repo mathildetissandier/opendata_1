@@ -1,0 +1,81 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette visualisation interactive présente l'espérance de vie en bonne santé (HLE - Healthy Life Expectancy) à la
+    naissance pour les hommes et les femmes, mesurée en années. L'objectif est d'analyser les variations géographiques
+    et temporelles de cet indicateur, de comparer les tendances entre les sexes, et d'évaluer l'impact des politiques de
+    santé publique sur la qualité de vie des populations.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du fichier Excel <strong>"His indicators update Nov 2024 FINAL.xlsx"</strong>, qui contient
+    des feuilles dédiées à l'espérance de vie en bonne santé pour les hommes ("1. HLE male") et les femmes ("2. HLE
+    female"). Ces données incluent la valeur moyenne de l'indicateur HLE, ainsi que les intervalles de confiance (Lower
+    CI et Upper CI) pour chaque période et zone géographique.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir des feuilles Excel spécifiques pour les hommes et les femmes.</li>
+    <li>Les colonnes pertinentes (<strong>Time Period</strong>, <strong>Area Name</strong>, <strong>Value</strong>,
+        <strong>Lower CI</strong>, <strong>Upper CI</strong>) ont été sélectionnées et nettoyées pour supprimer les
+        valeurs manquantes.
+    </li>
+    <li>Les erreurs (intervalles de confiance) ont été calculées pour chaque sexe (<strong>Negative Error</strong> et
+        <strong>Positive Error</strong>).
+    </li>
+    <li>Les données ont été formatées pour être compatibles avec la visualisation interactive.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par période et par zone géographique pour observer les tendances temporelles et
+        spatiales.</li>
+    <li>Une carte interactive a été utilisée pour représenter les variations géographiques de l'indicateur HLE, avec des
+        couleurs reflétant l'intensité de l'espérance de vie en bonne santé.</li>
+    <li>Un graphique avec intervalles de confiance a été choisi pour visualiser les tendances
+        temporelles et les incertitudes associées aux données.</li>
+    <li>Un menu déroulant permet de sélectionner un indicateur (HLE Male ou HLE Female) et une période spécifique pour
+        afficher les données correspondantes.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation sur une carte interactive permet de localiser facilement les zones où l'espérance de vie en
+        bonne santé est la plus élevée ou la plus faible.</li>
+    <li>Le graphique avec intervalles de confiance facilite la comparaison des tendances entre les
+        sexes et l'évaluation de la précision des données.</li>
+    <li>L'utilisation d'une interface interactive permet aux utilisateurs d'explorer les données en fonction de leurs
+        intérêts spécifiques (période, sexe).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les zones urbaines montrent généralement une espérance de vie en bonne santé plus élevée que les zones rurales,
+        en raison de l'accès aux services de santé et aux infrastructures.</li>
+    <li>Les femmes ont tendance à avoir une espérance de vie en bonne santé légèrement supérieure à celle des hommes,
+        bien que cette différence puisse varier selon les régions.</li>
+    <li>Les intervalles de confiance indiquent une certaine variabilité dans les données, reflétant des différences
+        socio-économiques et sanitaires entre les zones géographiques.</li>
+    <li>Une tendance à l'amélioration de l'espérance de vie en bonne santé est observée sur plusieurs années,
+        probablement en lien avec les progrès médicaux et les politiques de santé publique.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Génération des cartes :</strong> Les cartes ont été générées à partir des données géospatiales des zones
+        étudiées, avec une échelle de couleurs adaptée pour représenter les variations de l'indicateur HLE.</li>
+    <li><strong>Impact des politiques de santé :</strong> Les initiatives visant à améliorer l'accès aux soins et à
+        promouvoir des modes de vie sains ont probablement contribué à l'augmentation de l'espérance de vie en bonne
+        santé.</li>
+    <li><strong>Limites des données :</strong> Les intervalles de confiance reflètent l'incertitude des estimations, et
+        les données peuvent être influencées par des facteurs externes non mesurés.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte et du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette visualisation interactive vous permet d'explorer l'espérance de vie en bonne santé (HLE) pour les hommes et
+    les femmes. Utilisez le menu déroulant pour sélectionner un indicateur (HLE Male ou HLE Female) et une période
+    spécifique. La carte affiche les variations géographiques, tandis que le graphique montre les tendances temporelles
+    avec les intervalles de confiance. Survolez les éléments pour obtenir des informations détaillées.
+</p>

@@ -1,0 +1,51 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive montre la répartition des boroughs de Londres en clusters basés sur le volume de trafic routier. L'objectif est de comprendre les variations du trafic entre les différents boroughs, d'identifier les zones à fort trafic et d'évaluer l'impact des politiques de transport et des événements majeurs (comme la pandémie de COVID-19).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de Transport for London (TfL) et sont disponibles sur <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles incluent le volume de trafic pour les voitures et tous les véhicules motorisés, mesuré en millions de kilomètres parcourus, par borough et par année depuis 1993.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier CSV contenant le volume de trafic par borough et par année.</li>
+    <li>Les colonnes ont été nettoyées pour s'assurer que les années sont correctement formatées.</li>
+    <li>Un fichier GeoJSON des boroughs de Londres a été utilisé pour créer des polygones géographiques.</li>
+    <li>Un algorithme de clustering (K-means) a été appliqué pour regrouper les boroughs en fonction du volume de trafic.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Clustering K-means :</strong> Un algorithme de clustering K-means a été utilisé pour regrouper les boroughs en fonction du volume de trafic. Le nombre de clusters a été fixé à 3 pour simplifier l'analyse.</li>
+    <li><strong>Standardisation :</strong> Les données ont été standardisées pour améliorer la performance du modèle de clustering.</li>
+    <li><strong>Visualisation :</strong> Les clusters ont été visualisés sur une carte interactive en utilisant la bibliothèque Folium.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le clustering K-means est choisi pour sa simplicité et son efficacité dans la segmentation des données.</li>
+    <li>La standardisation des données permet de s'assurer que toutes les caractéristiques contribuent de manière équitable au clustering.</li>
+    <li>La visualisation sur une carte interactive permet de localiser facilement les clusters et de comprendre leur répartition géographique.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les boroughs centraux (comme Westminster et Camden) ont un volume de trafic plus faible, mais celui-ci peut varier en fonction des axes routiers principaux.</li>
+    <li>Les boroughs périphériques (comme Bromley et Havering) montrent généralement un volume de trafic élevé, en raison de la densité urbaine et de la concentration d'activités économiques.</li>
+    <li>Une baisse significative du trafic est observée en 2020, en raison de la pandémie de COVID-19 et des mesures de confinement.</li>
+    <li>Une reprise progressive du trafic est visible à partir de 2021, mais les niveaux pré-pandémiques ne sont pas encore atteints dans certains boroughs.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Performance du modèle :</strong> Le modèle de clustering montre une bonne séparation des boroughs en fonction du volume de trafic, avec des clusters bien définis.</li>
+    <li><strong>Limites des données :</strong> Les clusters sont basés sur des données historiques et peuvent être affectés par des événements imprévus (comme des changements politiques ou des conditions météorologiques extrêmes).</li>
+    <li><strong>Utilisation des clusters :</strong> Ces clusters peuvent être utilisés pour planifier les politiques de transport, anticiper les pics de trafic et évaluer l'impact des initiatives de réduction du trafic.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive vous permet d'explorer les clusters de boroughs en fonction du volume de trafic routier. 
+</p>

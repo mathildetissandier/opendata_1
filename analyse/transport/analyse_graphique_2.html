@@ -1,0 +1,58 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique analyse l'évolution du nombre de véhicules immatriculés (en milliers) à la fin de l'année, ventilés par type, y compris les voitures, les motos, les marchandises légères, les marchandises lourdes, les autobus et les autocars, ainsi que les autres véhicules. L'objectif est de comprendre comment les différentes catégories de véhicules ont évolué au fil des années et d'identifier des tendances spécifiques à certaines zones de Londres.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles comprennent des informations annuelles sur les véhicules immatriculés, classés par type et par autorité locale. Les véhicules sont attribués à une autorité locale en fonction du code postal du dépositaire enregistré (adresse du gardien pour les véhicules privés ou adresse enregistrée de l'entreprise pour les véhicules appartenant à une société).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir de plusieurs feuilles Excel, une par année, et fusionnées en un seul ensemble de données.</li>
+    <li>Les colonnes ont été nettoyées pour supprimer les espaces inutiles et standardiser les noms.</li>
+    <li>Seules les autorités locales valides (comme "City of London", "Westminster", etc.) ont été conservées pour l'analyse.</li>
+    <li>Les catégories de véhicules analysées incluent les voitures, les motos, les marchandises légères, les marchandises lourdes, les autobus et autocars, ainsi que les autres véhicules (pelles arrière, chariots élévateurs, ambulances, etc.).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par année et par autorité locale pour observer les tendances temporelles.</li>
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution du nombre de véhicules par catégorie.</li>
+    <li>Les données ont été triées chronologiquement pour assurer une représentation précise des tendances.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en courbes permet de mettre en évidence les variations annuelles et les tendances à long terme.</li>
+    <li>Le choix de filtrer les autorités locales non pertinentes garantit que les données analysées sont représentatives des zones géographiques spécifiques.</li>
+    <li>L'utilisation de données annuelles permet une analyse précise des évolutions sur une période de plusieurs décennies.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une augmentation générale du nombre de véhicules est observée dans la plupart des autorités locales jusqu'en 2020, avec des pics et des baisses localisés.</li>
+    <li>À partir de 2020/2021, de nombreux quartiers montrent une baisse significative du nombre de véhicules, probablement en raison de la pandémie de COVID-19 et des restrictions associées (télétravail, réduction des déplacements, etc.).</li>
+    <li>Cependant, certains quartiers comme Westminster connaissent une augmentation à partir de 2021, ce qui suggère un changement dans les dynamiques locales. Cela pourrait être dû à des facteurs tels que la relocalisation d'entreprises, l'évolution des habitudes de déplacement ou des politiques spécifiques à cette zone.</li>
+    <li>Les voitures dominent dans la plupart des autorités locales, suivies par les marchandises légères et les motos.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Attribution des véhicules :</strong> Les véhicules sont attribués à une autorité locale en fonction du code postal du dépositaire enregistré. Cela peut entraîner des variations importantes d'une année à l'autre si une entreprise change son adresse enregistrée.</li>
+    <li><strong>Autres véhicules :</strong> La catégorie "Autres véhicules" inclut les pelles arrière, les chariots élévateurs, les rouleaux, les ambulances, les chariots Hackney, les trois-roues et les véhicules agricoles.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation des menus déroulants (Dropdowns)</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les menus déroulants ci-dessus vous permettent de sélectionner une autorité locale et une ou plusieurs catégories de véhicules pour afficher les données correspondantes. Voici comment les utiliser :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Sélectionnez un quartier :</strong> Choisissez une autorité locale dans le premier menu déroulant pour afficher les données spécifiques à cette zone.</li>
+    <li><strong>Sélectionnez une ou plusieurs catégories de véhicules :</strong> Utilisez le deuxième menu déroulant pour sélectionner les catégories de véhicules que vous souhaitez analyser (par exemple, voitures, motos, etc.).</li>
+    <li><strong>Comparaison entre catégories :</strong> Vous pouvez sélectionner plusieurs catégories pour comparer leur évolution dans la même autorité locale.</li>
+</ul>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ces outils vous permettent d'adapter l'analyse à des contextes géographiques et thématiques spécifiques, offrant une flexibilité maximale pour explorer les données.
+</p>

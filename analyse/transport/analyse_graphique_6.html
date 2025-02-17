@@ -1,0 +1,63 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique analyse l'évolution du volume de trafic estimé pour les voitures et tous les véhicules par autorité locale depuis 1993, exprimé en kilomètres. 
+    L'objectif est de comprendre les tendances de circulation sur les différentes routes, d'identifier l'impact de facteurs économiques, sociaux ou environnementaux, 
+    et d'évaluer l'évolution de la demande en mobilité dans les différentes zones locales. Toutefois, les données s'arrêtent en <strong>2012/2013</strong>, 
+    ce qui rend l'analyse plus complexe car elles ne reflètent pas les évolutions récentes (telles que l'impact de la pandémie de COVID-19 ou des nouvelles politiques de transport). 
+    De plus, les tendances varient fortement selon les routes, rendant les conclusions générales difficiles.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>.
+    Elles incluent le volume de trafic en kilomètres parcourus sur diverses routes, ventilé par type de véhicule (voitures, camions, motos, etc.). 
+    Cependant, l'absence de mise à jour depuis <strong>2012/2013</strong> limite la pertinence des observations actuelles.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier contenant les volumes de trafic par route et par année jusqu'en 2012/2013.</li>
+    <li>Les colonnes ont été nettoyées pour éliminer les valeurs manquantes et standardiser les formats (exemple : uniformisation des noms de routes).</li>
+    <li>Le jeu de données a été transformé en format long (long format) pour faciliter la visualisation des tendances par route et par type de véhicule.</li>
+    <li>Un filtrage par route a été mis en place pour permettre aux utilisateurs de sélectionner une route spécifique à analyser.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par année et par type de véhicule pour observer les tendances temporelles.</li>
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution du trafic au fil du temps, avec une couleur différente pour chaque type de véhicule.</li>
+    <li>Des marqueurs ont été ajoutés pour mettre en évidence les points de données annuels.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en courbes permet de mettre en évidence les variations annuelles et les tendances à long terme.</li>
+    <li>Le regroupement par route permet de comparer l'évolution du trafic sur différentes routes.</li>
+    <li>L'utilisation de marqueurs facilite la lecture des données annuelles spécifiques.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une croissance générale du trafic est observée jusqu'à la fin des années 2000, suivie d'une stagnation ou d'une légère baisse liée à la crise économique mondiale de 2008.</li>
+    <li>La variabilité est très marquée selon les routes :
+        <ul>
+            <li>Certaines routes montrent une croissance continue, tandis que d'autres subissent des baisses de trafic.</li>
+            <li>Les tendances observées ne sont pas généralisables à l'ensemble des routes en raison des spécificités locales (zones urbaines vs rurales, routes principales vs secondaires).</li>
+        </ul>
+    </li>
+    <li>La limitation majeure est l'arrêt des données en <strong>2012/2013</strong>, ce qui empêche d'observer des phénomènes récents (exemple : impact du télétravail ou des nouvelles infrastructures de transport).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Ancienneté des données :</strong> Les dernières données disponibles datent de <strong>2012/2013</strong>, ce qui rend difficile une interprétation pertinente pour les tendances actuelles.</li>
+    <li><strong>Variabilité locale :</strong> Les tendances de trafic varient fortement selon les routes en fonction de nombreux facteurs locaux (démographie, développement urbain, politiques locales de transport).</li>
+    <li><strong>Sources des données :</strong> Les estimations de trafic sont basées sur des comptages automatiques de véhicules et des modèles de circulation développés par le Department for Transport (DfT).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif vous permet de sélectionner une route spécifique et d'observer l'évolution du trafic au fil des années jusqu'en <strong>2012/2013</strong>. 
+    Survolez les points pour voir le nombre exact de kilomètres parcourus pour chaque année. Toutefois, l'interprétation des résultats doit être faite avec prudence 
+    en raison de l'ancienneté des données et de la forte variabilité locale.
+</p>

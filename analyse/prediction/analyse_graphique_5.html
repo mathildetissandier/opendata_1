@@ -1,0 +1,92 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive montre la répartition des arrondissements de Londres en clusters basés sur l'espérance de
+    vie en bonne santé (HLE) et la concentration de particules fines PM2.5. L'objectif est de comprendre les variations
+    de ces indicateurs entre les différents arrondissements, d'identifier les zones où la santé publique est la plus
+    affectée par la pollution, et d'évaluer l'impact des politiques environnementales et sanitaires.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du fichier Excel <strong>"His indicators update Nov 2024 FINAL.xlsx"</strong>, qui contient
+    des feuilles dédiées à l'espérance de vie en bonne santé (HLE) et à la pollution atmosphérique (PM2.5). Ces données
+    incluent des informations sur la santé publique et la qualité de l'air pour chaque arrondissements de Londres.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Variables utilisées pour le clustering</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Pour effectuer le clustering, deux variables principales ont été utilisées :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Espérance de vie en bonne santé (HLE) :</strong> Cet indicateur mesure le nombre d'années qu'une
+        personne peut espérer vivre en bonne santé. Il reflète l'état de santé général de la population et est influencé
+        par des facteurs tels que l'accès aux soins, les modes de vie et les conditions socio-économiques.</li>
+    <li><strong>Concentration de particules fines PM2.5 :</strong> Cette variable mesure la quantité de particules fines
+        dans l'air, qui sont nocives pour la santé respiratoire et cardiovasculaire. Elle est un indicateur clé de la
+        qualité de l'air et de l'exposition à la pollution.</li>
+</ul>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ces deux variables ont été combinées pour former un espace de features multidimensionnel, sur lequel l'algorithme de
+    clustering K-means a été appliqué.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir des feuilles Excel spécifiques à l'espérance de vie en bonne santé (HLE)
+        et à la pollution aux PM2.5.</li>
+    <li>Les colonnes pertinentes (<strong>Area Name</strong>, <strong>Value</strong> pour HLE et PM2.5) ont été
+        sélectionnées et nettoyées pour supprimer les valeurs manquantes.</li>
+    <li>Les données ont été agrégées par arrondissements pour calculer les valeurs moyennes de HLE et de PM2.5.</li>
+    <li>Un algorithme de clustering (K-means) a été appliqué pour regrouper les boroughs en fonction de ces deux
+        indicateurs.</li>
+    <li>Un fichier GeoJSON des arrondissements de Londres a été utilisé pour créer des polygones géographiques.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Clustering K-means :</strong> Un algorithme de clustering K-means a été utilisé pour regrouper les
+        arrondissements en fonction de l'espérance de vie en bonne santé (HLE) et de la concentration de PM2.5. Le
+        nombre de clusters a été fixé à 3 pour simplifier l'analyse.</li>
+    <li><strong>Standardisation :</strong> Les données ont été standardisées pour s'assurer que les deux variables
+        contribuent de manière équitable au clustering.</li>
+    <li><strong>Visualisation :</strong> Les clusters ont été visualisés sur une carte interactive en utilisant la
+        bibliothèque Folium.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le clustering K-means est choisi pour sa simplicité et son efficacité dans la segmentation des données.</li>
+    <li>La standardisation des données permet de s'assurer que les deux variables (HLE et PM2.5) ont un poids égal dans
+        le clustering.</li>
+    <li>La visualisation sur une carte interactive permet de localiser facilement les clusters et de comprendre leur
+        répartition géographique.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les arrondissements centraux (comme Westminster et Camden) montrent généralement une espérance de vie en bonne
+        santé plus élevée malgré des niveaux de pollution plus importants, probablement en raison d'un meilleur accès
+        aux soins et à des modes de vie plus sains.</li>
+    <li>Les arrondissements périphériques (comme Bromley et Havering) ont tendance à avoir une espérance de vie en bonne
+        santé plus faible et des niveaux de pollution plus bas, ce qui pourrait refléter des disparités
+        socio-économiques et un accès limité aux services de santé.</li>
+    <li>Les clusters sont bien séparés, ce qui indique que les variations de HLE et de PM2.5 sont significatives entre
+        les différents arrondissements.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Performance du modèle :</strong> Le modèle de clustering montre une bonne séparation des arrondissements
+        en fonction des indicateurs HLE et PM2.5, avec des clusters bien définis.</li>
+    <li><strong>Limites des données :</strong> Les clusters sont basés sur des données actuelles et peuvent être
+        affectés par des changements futurs dans les politiques de santé et environnementales.</li>
+    <li><strong>Utilisation des clusters :</strong> Ces clusters peuvent être utilisés pour cibler des interventions
+        spécifiques dans les zones où la santé publique est la plus affectée par la pollution.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive vous permet d'explorer les clusters de arrondissements en fonction de l'espérance de vie en
+    bonne santé (HLE) et de la concentration de particules fines PM2.5. Les clusters sont représentés par des couleurs
+    distinctes, ce qui facilite l'identification des zones où la santé publique est la plus affectée par la pollution.
+</p>

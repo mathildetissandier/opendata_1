@@ -1,0 +1,86 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    L’objectif est de visualiser les clusters formés en fonction du prix moyen des maisons, du nombre de logements
+    vacants et du nombre de logements vendus, afin d’analyser les variations du marché immobilier entre les différents
+    quartiers de Londres.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk"
+        target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles comprennent des
+    informations annuelles sur le prix moyen d'une maison, le nombre de logements vactants et vendus par quartier et
+    l'abordabilité.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Variables utilisées pour le clustering</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Pour effectuer le clustering, 4 variables principales ont été utilisées :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Le prix moyen d'une maison</strong>
+    <li><strong>Le nombre de logements vactants</strong>
+    <li><strong>Le nombre de logements vendus</strong>
+    <li><strong>L'abordabilité</strong>
+</ul>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ces 4 variables ont été combinées pour former un espace de features multidimensionnel, sur lequel l'algorithme de
+    clustering K-means a été appliqué.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir de fichiers Excel et CSV.</li>
+    <li>Les colonnes pertinentes (<strong>Year</strong>,<strong>Area Name</strong>, <strong>Value</strong> pour les 4
+        variables) ont été
+        sélectionnées, fusionnées et nettoyées pour supprimer les valeurs manquantes.</li>
+    <li>Un algorithme de clustering (K-means) a été appliqué pour regrouper les quartiers en fonction de ces 4
+        indicateurs.</li>
+    <li>Un fichier GeoJSON des arrondissements de Londres a été utilisé pour créer des polygones géographiques.</li>
+    <li>Les données ont été filtrées de façon à ne garder que les années communnes à tous les DataFrames.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Clustering K-means :</strong> Un algorithme de clustering K-means a été utilisé pour regrouper les
+        arrondissements en fonction des 4 variables. Le
+        nombre de clusters a été fixé à 3 par défaut.</li>
+    <li><strong>Normalisation :</strong> Les données ont été normalisées pour s'assurer que les 4 variables
+        contribuent de manière équitable au clustering.</li>
+    <li><strong>Visualisation :</strong> Les clusters ont été visualisés sur une carte interactive en utilisant la
+        bibliothèque Folium.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le clustering K-means est choisi pour sa simplicité et son efficacité dans la segmentation des données.</li>
+    <li>La Normalisation des données permet de s'assurer que les 4 variables ont un poids égal dans
+        le clustering.</li>
+    <li>La visualisation sur une carte interactive permet de localiser facilement les clusters et de comprendre leur
+        répartition géographique.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les clusters formés montrent une répartition géographique distincte, avec des quartiers centraux de Londres
+        souvent regroupés dans un cluster caractérisé par des prix moyens élevés et un nombre de logements vacants
+        relativement bas.</li>
+    <li>Les quartiers périphériques tendent à former des clusters distincts, souvent associés à des prix moyens plus bas
+        et un nombre de logements vacants plus élevé, reflétant des dynamiques de marché différentes.</li>
+    <li>Certains clusters montrent une corrélation entre l'abordabilité et le nombre de logements vendus, suggérant que
+        les zones plus abordables ont tendance à avoir une activité de vente plus élevée.</li>
+    <li>Les variations annuelles dans les clusters indiquent des changements dans les dynamiques du marché immobilier,
+        potentiellement influencés par des facteurs économiques, des politiques locales ou des tendances démographiques.
+    </li>
+    <li>La visualisation interactive permet d'identifier des zones spécifiques où des interventions politiques
+        pourraient être nécessaires pour réduire le nombre de logements vacants ou améliorer l'abordabilité.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;"> Cette carte interactive vous permet d'explorer les
+    clusters des quartiers en fonction du prix moyen d'une maison, le nombre de logements vacants et vendus, et
+    l'abordabilité. Les clusters sont représentés par des couleurs distinctes, ce qui facilite l'identification des
+    zones où la santé publique est la plus affectée par la pollution. Il y a la possibilité de choisir un nombre de
+    clusters entre 2 et 10 ainsi qu'une année entre 2010 et 2023. De plus, vous pouvez passer la souris sur chaque
+    quartier pour voir les caractéristiques spécifiques du cluster auquel il appartient, telles que le prix moyen des
+    maisons, le nombre de logements vacants, le nombre de logements vendus et l'indice d'abordabilité. </p>

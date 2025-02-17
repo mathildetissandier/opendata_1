@@ -1,0 +1,68 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique compare les taux de criminalité par type de transport public à Londres, notamment pour les bus, le London Underground / Docklands Light Railway (LU/DLR), le London Overground et le London Tramlink. L'objectif est de comprendre les variations des taux de criminalité en fonction du mode de transport et de l'évolution mensuelle.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">   
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. 
+    <ul>
+        <li>Le BTP est responsable de la sécurité sur les réseaux LU, DLR, London Tramlink et London Overground.</li>
+        <li>Le MPS est en charge de la sécurité du réseau de bus à Londres.</li>
+    </ul>
+    Les données incluent le nombre de crimes et le taux de criminalité par million de trajets passagers pour chaque type de transport public. Elles sont mises à jour trimestriellement et affichées par mois.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites de rapports trimestriels et mises en forme dans un fichier CSV pour faciliter l'analyse.</li>
+    <li>Les colonnes ont été nettoyées et converties en format numérique pour le calcul des taux de criminalité par million de trajets passagers.</li>
+    <li>Les données ont été transformées en format long (long format) pour permettre une visualisation comparative par type de transport public.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le taux de criminalité par million de trajets a été calculé en divisant le volume de crimes par le nombre de trajets passagers, multiplié par un million.</li>
+    <li>Une visualisation en barres groupées (grouped bar chart) a été choisie pour comparer les taux de criminalité par type de transport public et par mois.</li>
+    <li>Des couleurs distinctes ont été utilisées pour chaque type de transport afin de faciliter la comparaison visuelle.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en barres groupées permet de comparer les taux de criminalité pour différents types de transport public sur une base mensuelle.</li>
+    <li>Le regroupement par type de transport permet d'observer les différences de taux de criminalité entre les réseaux LU/DLR, Tramlink, bus et Overground.</li>
+    <li>Les couleurs distinctes pour chaque mode de transport facilitent la lecture et l'analyse comparative.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Le taux de criminalité varie considérablement selon le type de transport public et les mois observés.</li>
+    <li>Les chiffres peuvent être influencés par des facteurs saisonniers, des événements publics majeurs ou des changements dans les politiques de sécurité publique.</li>
+    <li>Les données trimestrielles peuvent introduire un léger décalage dans l'analyse mensuelle en raison des ajustements postérieurs et des rapports tardifs.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Limites de l'analyse</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ne font pas de distinction détaillée pour les crimes sur le réseau de bus, car le MPS utilise un système de codage complexe pour le transport.</li>
+    <li>Les taux de criminalité pour le London Overground ne sont disponibles qu'à partir d'avril 2011, en raison de l'absence de données de trajets précises auparavant.</li>
+    <li>Les chiffres mensuels ne doivent pas être additionnés pour obtenir un total annuel, car les ajustements trimestriels peuvent modifier les valeurs agrégées.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations clés</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>London Underground / Docklands Light Railway (LU/DLR)</strong> : Le taux de criminalité pour le LU/DLR est systématiquement le plus haut chaque mois par rapport aux autres modes de transport.</li>
+    <li><strong>London Tramlink</strong> : Les taux de criminalité pour le Tramlink sont légèrement plus bas que ceux du LU/DLR, mais restent relativement grands par rapport aux bus et au London Overground.</li>
+    <li><strong>Bus et London Overground</strong> : Les taux de criminalité pour les bus et le London Overground sont généralement au même niveau chaque mois, montrant des variations similaires au fil du temps.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Responsabilité des forces de l'ordre :</strong> Le BTP est responsable de la sécurité sur le réseau ferroviaire et Tramlink, tandis que le MPS gère la sécurité sur le réseau de bus.</li>
+    <li><strong>Méthodologie de collecte des données :</strong> Les données du BTP proviennent directement des rapports de crimes sur le réseau ferroviaire, tandis que les données du MPS sont extraites via des requêtes complexes dans leur système de rapports de crimes.</li>
+    <li><strong>Mise à jour des données :</strong> Les données sont mises à jour trimestriellement et peuvent être révisées en raison de rapports tardifs ou d'ajustements des chiffres de trajets passagers.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du graphique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique interactif permet de comparer les taux de criminalité par type de transport public et par mois. Survolez les barres pour afficher le taux exact de criminalité pour chaque mode de transport à un moment donné.
+</p>

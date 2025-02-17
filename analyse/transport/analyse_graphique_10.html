@@ -1,0 +1,51 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive montre le volume de trafic routier par borough à Londres, mesuré en millions de kilomètres parcourus par les véhicules. L'objectif est de comprendre les variations du trafic entre les différents boroughs, d'identifier les tendances annuelles et d'évaluer l'impact des politiques de transport et des événements majeurs (comme la pandémie de COVID-19).
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>, de l'enquête nationale sur le trafic routier du Department for Transport (DFT). Elles incluent le volume de trafic pour les voitures et tous les véhicules motorisés, mesuré en millions de kilomètres parcourus, par borough et par année depuis 1993.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir d'un fichier structuré contenant le volume de trafic par borough et par année.</li>
+    <li>Les colonnes ont été nettoyées pour s'assurer que les années sont correctement formatées.</li>
+    <li>Un fichier GeoJSON des boroughs de Londres a été utilisé pour créer des polygones géographiques.</li>
+    <li>Une échelle de couleurs détaillée a été générée pour représenter les variations du volume de trafic.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par borough et par année pour observer les tendances temporelles.</li>
+    <li>Une visualisation sur carte interactive a été choisie pour représenter les variations du volume de trafic, avec des polygones colorés en fonction de l'intensité du trafic.</li>
+    <li>Un menu déroulant permet de sélectionner une année spécifique pour afficher les données correspondantes.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation sur une carte interactive permet de localiser facilement les zones à fort trafic et de comprendre leur répartition géographique.</li>
+    <li>Les polygones colorés par borough facilitent l'identification des zones à forte intensité de trafic.</li>
+    <li>L'utilisation d'une échelle de couleurs détaillée permet de mieux distinguer les variations subtiles du volume de trafic.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les boroughs centraux (comme Westminster et Camdenont) un volume de trafic plus faible, mais celui-ci peut varier en fonction des axes routiers principaux.</li>
+    <li>Les boroughs pérophériques (comme Bromley et Havering) montrent généralement un volume de trafic élevé, en raison de la densité urbaine et de la concentration d'activités économiques.</li>
+    <li>Une baisse significative du trafic est observée en 2020, en raison de la pandémie de COVID-19 et des mesures de confinement.</li>
+    <li>Une reprise progressive du trafic est visible à partir de 2021, mais les niveaux pré-pandémiques ne sont pas encore atteints dans certains boroughs.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Génération des cartes :</strong> Les cartes ont été générées indépendamment sur un autre fichier, en utilisant une échelle de couleurs détaillée pour représenter les variations du volume de trafic.</li>
+    <li><strong>Impact des politiques de transport :</strong> Les initiatives comme les zones à faibles émissions (ULEZ) et les péages urbains ont influencé les tendances du trafic, en particulier dans le centre de Londres.</li>
+    <li><strong>Limites des données :</strong> Les données sont basées sur des estimations et peuvent être sujettes à des révisions en fonction des ajustements des enquêtes nationales.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation de la carte</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Cette carte interactive vous permet d'explorer le volume de trafic routier par borough à Londres. Utilisez le menu déroulant pour sélectionner une année spécifique et afficher les données correspondantes. Survolez les polygones pour obtenir des informations détaillées sur le volume de trafic. 
+</p>

@@ -1,0 +1,60 @@
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Problématique</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Ce graphique analyse l'évolution du nombre de véhicules de marchandises privées ou légères autorisés dans les différents quartiers de Londres depuis 1997. L'objectif est de comprendre les tendances à long terme et d'identifier d'éventuelles variations liées à des événements économiques, politiques ou sociaux.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Origine des données</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Les données proviennent du site officiel de la ville de Londres, <a href="https://data.london.gov.uk" target="_blank" style="color: #2196F3; text-decoration: none;">data.london.gov.uk</a>. Elles comprennent des informations annuelles sur les véhicules autorisés, classés par type (véhicules privés, véhicules d'entreprise, etc.) et par quartier.
+</p>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Traitement des données</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été extraites à partir de fichiers CSV annuels, fusionnés en un seul DataFrame pour faciliter l'analyse.</li>
+    <li>Les colonnes pertinentes ont été sélectionnées, notamment les catégories de véhicules (<code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">PLGCars:Company</code>, <code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">PLGCars:Private</code>, etc.) et l'année.</li>
+    <li>Les quartiers non pertinents (comme "London" ou "UnknownBorough") ont été filtrés pour se concentrer sur les données spécifiques à chaque quartier.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Méthodologie statistique</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Les données ont été agrégées par année et par quartier pour observer les tendances temporelles.</li>
+    <li>Une visualisation en courbes (line plot) a été choisie pour représenter l'évolution du nombre de véhicules par catégorie.</li>
+    <li>Les données ont été triées chronologiquement pour assurer une représentation précise des tendances.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Justification des choix</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>La visualisation en courbes permet de mettre en évidence les variations annuelles et les tendances à long terme.</li>
+    <li>Le choix de filtrer les quartiers non pertinents garantit que les données analysées sont représentatives des zones géographiques spécifiques.</li>
+    <li>L'utilisation de données annuelles permet une analyse précise des évolutions sur une période de plus de deux décennies.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Observations préliminaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li>Une augmentation générale du nombre de véhicules est observée dans la plupart des quartiers, avec des pics et des baisses localisés.</li>
+    <li>Le nombre total de véhicules privés (<code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">PLGTotal</code>) dominent dans la plupart des quartiers, suivis par les véhicules privés (<code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">PLGCars:Private</code>).</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Informations supplémentaires</h3>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Tendances du nombre total de véhicules privés ou légers de marchandises à la fin de l'année depuis 1997 :</strong> Ce graphique montre l'évolution du nombre de véhicules de type "Private or Light Goods" (PLG) depuis 1997, en mettant en lumière les variations annuelles et les tendances globales.</li>
+    <li><strong>Exemptions pour les personnes handicapées :</strong> Les véhicules exemptés de taxe, marqués comme "Exempt: Disabled", concernent les véhicules utilisés par des personnes handicapées bénéficiant du taux élevé de la composante mobilité de l'allocation pour handicapés (Disability Living Allowance), de la pension de guerre pour la mobilité (War Pensioners Mobility Supplement) ou possédant un véhicule adapté. Cela ne doit pas être confondu avec les badges de stationnement pour personnes handicapées.</li>
+    <li><strong>PLG : Véhicules privés ou légers de marchandises :</strong> La catégorie "Private or Light Goods" (PLG) exclut les poids lourds, les bus et les autocars.</li>
+    <li><strong>Différences avec les statistiques du DFT :</strong> Les chiffres présentés dans cette analyse ne correspondent pas exactement à ceux du "Vehicle licensing statistics" du Department for Transport (DFT), car le DFT inclut tous les véhicules, y compris ceux exemptés de taxe.</li>
+</ul>
+
+<h3 style="color: #4CAF50; font-weight: bold; margin-bottom: 10px;">Utilisation du menu déroulant (Dropdown)</h3>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le menu déroulant ci-dessus vous permet de sélectionner un quartier spécifique de Londres pour afficher les données correspondantes. Voici comment l'utiliser :
+</p>
+<ul style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    <li><strong>Sélectionnez un quartier :</strong> Cliquez sur le menu déroulant et choisissez un quartier dans la liste. Les données du graphique seront automatiquement mises à jour pour refléter les tendances du quartier sélectionné.</li>
+    <li><strong>Comparaison entre quartiers :</strong> Vous pouvez changer de quartier à tout moment pour comparer les tendances entre différentes zones de Londres.</li>
+    <li><strong>Focus sur des zones spécifiques :</strong> Cet outil vous permet de zoomer sur des quartiers particuliers pour une analyse plus détaillée.</li>
+</ul>
+<p style="color: #333; line-height: 1.6; margin-bottom: 20px;">
+    Le menu déroulant est un élément clé de cette visualisation, car il permet d'adapter l'analyse à des contextes géographiques spécifiques et de mieux comprendre les variations locales.
+</p>
+
+
+
